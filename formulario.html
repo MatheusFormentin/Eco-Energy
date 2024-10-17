@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abasteça Já</title>
+    <link rel="stylesheet" href="assets/css/formulario.css">
+    <link rel="stylesheet" href="assets/css/responsividade.css">
+</head>
+<body>
+    <!--Header-->
+    <header class="header">
+        <div class="logo">
+            <p>Eco Energy</p>
+        </div>
+
+        <div class="menu">
+            <a href="index.html">Voltar</a>
+        </div>
+    </header>
+    <!--Fim Header-->
+    <div id="title">
+        <h1>Solicite seu Abastecimento já</h1>
+        <p>Preencha o formulario abaixo para liberar o abastecimento de sua bomba.</p>
+    </div>
+
+    <!-- Formulario -->
+    <div class="form">
+        <div class="form-name">
+            <p><span>1.</span>Nome Completo <span>*</span></p>
+            <div class="form-name-resp">
+                <input type="text" id="first-name" placeholder="Primeiro nome" required>
+                <input type="text" placeholder="Último nome" required>
+            </div>
+        </div>
+        <div class="form-email">
+            <p><span>2.</span>Email <span>*</span></p>
+            <input type="email" placeholder="Digite seu melhor email" required>
+        </div>   
+        <div class="form-phone">
+            <div class="form-phone-1">
+                <p><span>3.</span>Número <span>*</span></p>
+                <input type="tel" name="phone" placeholder="(99) 99999-9999" pattern="\(\d{2}\) \d{5}-\d{4}" required>
+            </div>
+            <div class="form-phone-2">
+                <p><span>4.</span>Tipo <span>*</span></p>
+                <select id="phone" name="phone">
+                    <option value="Celular">Celular</option>
+                    <option value="Telefone">Telefone</option>
+                  </select>
+            </div>
+        </div>
+        <div class="form-loc">
+            <div class="form-loc-1">
+                <p><span>5.</span>Posto de Abastecimento <span>*</span></p>
+                <select name="locs" id="locs">
+                    <option value="Eco Energy - Estação Centro">Eco Energy - Estação Centro</option>
+                    <option value="Eco Energy - Estação Moinhos">Eco Energy - Estação Moinhos</option>
+                    <option value="Eco Energy - Estação Zona Sul">Eco Energy - Estação Zona Sul</option>
+                    <option value="Eco Energy - Estação Zona Norte">Eco Energy - Estação Zona Norte</option>
+                </select>
+            </div>
+            <div class="form-loc-2">
+                <p><span>6.</span>Número da Bomba <span>*</span></p>
+                <input type="number">
+            </div>
+        </div>
+
+        <div class="form-submit">
+            <input type="submit" value="Solicitar Abastecimento">
+            <p>Após enviar aguarde confirmação</p>
+        </div>
+    </div> 
+
+
+    <!-- Fim do Formulario -->
+
+</body>
+</html>
