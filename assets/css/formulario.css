@@ -8,6 +8,7 @@ body{
 
 /*************** HEADER *****/
 .header {
+    max-width: 100%;
     user-select: none;
     position: fixed;
     top: 0;
@@ -33,6 +34,7 @@ body{
     font-weight: bold;
     font-size: 25px;
     margin-top: -15px;
+    font-family: 'TT Hoves Pro Trial', sans-serif;
 }
 
 /* Menu */
@@ -158,9 +160,17 @@ select::placeholder{
 }
 
 .form {
-    margin-left: 20%;
-    margin-right: 20%;
+    text-align: center;
+    justify-content: center;
     margin-top: 50px;
+}
+
+.form-email,
+.form-name,
+.form-loc,
+.form-phone,
+.form-submit{
+    justify-content: center;
 }
 
 p {
