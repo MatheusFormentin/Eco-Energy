@@ -6,12 +6,20 @@
     <title>Abasteça Já</title>
     <link rel="stylesheet" href="assets/css/formulario.css">
     <link rel="stylesheet" href="assets/css/responsividade.css">
+
+    <script src="assets/js/modal.js" defer></script>
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/db67180929.js" crossorigin="anonymous"></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <!--Header-->
     <header class="header">
         <div class="logo">
-            <p>Eco Energy</p>
+            <a href="index.html">Eco Energy</a>
         </div>
 
         <div class="menu">
@@ -67,12 +75,28 @@
         </div>
 
         <div class="form-submit">
-            <input type="submit" value="Solicitar Abastecimento">
+            <button id="open-modal">Solicitar Abastecimento</button>
             <p>Após enviar aguarde confirmação</p>
         </div>
     </div> 
 
-
+    <div id="fade" class="hide"></div>
+    <div id="modal" class="hide">
+        <div id="modal-header">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <h2>Você confirma seus Dados? </h2>
+        </div>
+        <div id="modal-body">
+            <p>O seu pedido de carregamento do veículo elétrico foi recebido!</p>
+            <p>Para prosseguir selecione a opção abaixo!</p>
+        </div>
+        <div id="modal-buttons">
+            <button id="close-modal">Cancelar</button>
+            <a href="index.html">
+                <button id="btn-prossiga">Confirmo</button>
+            </a>
+        </div>
+    </div>
     <!-- Fim do Formulario -->
 
 </body>
