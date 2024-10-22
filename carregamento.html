@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Energy</title>
+
+    <!-- css -->
+     <link rel="stylesheet" href="assets/css/carregamento.css">
+     <link rel="stylesheet" href="assets/css/responsividade.css">
+
+     <!-- js -->
+      <script src="assets/js/carregamento.js" defer></script>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/db67180929.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!--Header-->
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">Eco Energy</a>
+        </div>
+
+        <div class="menu">
+            <a href="index.html">Voltar</a>
+        </div>
+    </header>
+    <!--Fim Header-->
+    <div class="title">
+        <h1>Carregamento Iniciado</h1>
+        <p>Aguarde enquanto seu carro carrega.</p>
+    </div>
+
+    <!-- Cards -->
+    <div class="cards">
+        <div class="card">
+            <h3>Bateria</h3>
+            <div class="progress-container">
+                <div class="circular-progress" id="circular-progress">
+                    <span class="progress-value" id="progress-value">0%</span>
+                </div>
+            </div>
+            <p>Ao chegar à 100% estará carregado. </p>
+        </div>
+
+        <div class="card-img">
+            <img src="assets/img/DALL·E 2024-10-21 23.59.32 - A modern electric car charging at a sleek Eco Energy charging station. The car's battery icon is visible, showing an increasing charge level, and ther.webp" alt="Abastecendo">
+        </div>
+    </div>
+
+    <div class="cards">
+        <div class="card-img" style="margin-left: 10%">
+            <img src="assets/img/DALL·E 2024-10-21 23.59.30 - A digital display on an electric car charging station labeled Eco Energy, showing the remaining charging time for a connected car. The display highlig.webp" alt="Abastecendo" style="border: 2px solid blue;">
+        </div>
+
+        <div class="card" style="border: 2px solid blue; min-width: 300px;">
+            <h3>Tempo que Falta</h3>
+            <div class="progress-container">
+                <div class="container">
+                    <canvas id="countdownChart" width="400" height="400"></canvas>
+                    <div id="timeRemaining" class="time-remaining">Tempo restante: 6:00:00</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cards">
+        <div class="card" style="border: 2px solid #ff5500;">
+            <h3>Terminará às</h3>
+            <i class="fa-solid fa-clock"></i>
+            <div class="container">
+                <div id="endTime" class="end-time"></div>
+            </div>
+            <p id="end-p">Esta é uma previsão aproximada, podendo não ser exata! </p>
+        </div>
+
+        <div class="card-img">
+            <img src="assets/img/DALL·E 2024-10-21 23.59.24 - A futuristic digital display on an Eco Energy electric car charging station showing the estimated completion time for charging. The display highlights.webp" alt="Abastecendo" style="border: 2px solid #ff5500">
+        </div>
+
+    </div>
+
+     <script src="assets/js/carregamento.js"></script>
+</body>
+</html>

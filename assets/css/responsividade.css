@@ -218,14 +218,45 @@
     .form-submit {
         margin-left: 20%;
     }
+    
+    .card-img {
+        max-width: 200px;
+        min-width: 500px;
+        display: flex;
+        margin-left: -5%;
+        margin-right: -5%;
+    }
+
+    .card-img img{
+        max-width: 40%;
+        min-width: 500px;
+        width: 200px;
+    }
 
     @media (min-width: 768px) and (max-width:768px) {
         .form-name-resp input[type="text"]{
             min-width: 558px;
         }
+
+        .card{
+            margin-left: 5%;
+        }
+
+        .card-img {
+            max-width: 200px;
+            min-width: 300px;
+            display: flex;
+            margin-left: -5%;
+        }
+    
+        .card-img img{
+            max-width: 40%;
+            min-width: 300px;
+            width: 200px;
+        }
     }
 
-    @media (max-width:768px){
+    @media (max-width:767px){
         /* FORMULARIO */
         .form {
             margin-left: 10%;
@@ -264,6 +295,25 @@
         .form-submit p {
             min-width: 80%;
             margin-left: -35%;
+        }
+
+        /* CARREGAMENTO */
+
+        .title {
+            margin: 200px 0px;
+        }
+    
+        .title h1 {
+            font-size: 50px;
+        }
+        
+        .title p {
+            font-size: 20px;
+            margin-top: -20px;
+        }
+    
+        .card-img{
+            display: none;
         }
     }
 }
